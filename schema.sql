@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS contact_db;
+USE contact_db;
+
+CREATE TABLE IF NOT EXISTS contacts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    phone VARCHAR(15),
+    email VARCHAR(100),
+    address VARCHAR(255)
+);
